@@ -7,7 +7,6 @@
 **Date:** 1987
 
 **Source:** UNSW Library Book
-
 **Publisher:** 
 Department of Computer Science.
 Birkbeck College, University of London.
