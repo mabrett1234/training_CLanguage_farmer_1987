@@ -3,6 +3,8 @@ project(book_Farmer_1987 C)
 
 set(CMAKE_C_STANDARD 11)
 
+include_directories(Inc)
+
 # Default:
 #add_executable(book_Farmer_1987 Src/main.c)
 
@@ -74,5 +76,10 @@ set(CMAKE_C_STANDARD 11)
 # Example 4.7
 #add_executable(book_Farmer_1987 Src/chapter_4/perfect.c)
 
-# Example 4.8
-add_executable(book_Farmer_1987 Src/chapter_4/getline.c)
+# Example 4.8: Function definition only
+
+# Example 4.9
+add_executable(book_Farmer_1987 Src/chapter_4/uniq.c Inc/chapter_4/getline.h Src/chapter_4/getline.c)
+
+# Example 4.10
+#add_executable(book_Farmer_1987 Src/chapter_4/quadratic1.c)
