@@ -72,4 +72,7 @@ set(CMAKE_C_STANDARD 11)
 #add_executable(book_Farmer_1987 Src/chapter_4/for.c)
 
 # Example 4.7
-add_executable(book_Farmer_1987 Src/chapter_4/perfect.c)
+#add_executable(book_Farmer_1987 Src/chapter_4/perfect.c)
+
+# Example 4.8
+add_executable(book_Farmer_1987 Src/chapter_4/getline.c)

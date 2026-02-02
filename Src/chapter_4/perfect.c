@@ -1,8 +1,10 @@
 /*perfect.c*/
-//Broken kinda
 // Example 4.7
 // 'perfect' number is integer > 0 that equals sum of its divisors
 // E.g. 1 + 2 + 3 = 6
+// Other examples are 28, 496, 8128, 33550336
+// 8589869056 is the next perfect number, but will return an error due to
+// number being to big for integer representation
 // This program reads in integer values (from standard input)
 // then reports if input number is perfect or not.
 
@@ -17,17 +19,18 @@ int main(void) {
     int n;
     while (scanf("%d", &n) != EOF) {
         int sum = 1;
-        int divisor;
-        for (divisor = 2; divisor <= n/2; divisor++) {
+        // printf("n = %d\n", n); // DBUG
+        for (int divisor = 2; divisor <= n/2; divisor++) {
             if (n % divisor == 0) {
                 sum += divisor;
-            }
-            if (sum == n) {
-                printf("%d is perfect\n", n);
-            } else {
-                printf("%d is not perfect\n", n);
+                // printf("Divisor = %d, Sum = %d\n", divisor, sum); // DBUG
             }
         }
+        printf(")\n%d is ", n);
+        if (sum != n) {
+            printf("not ");
+        }
+        printf("perfect\n");
     }
     return 0;
 }
