@@ -8,6 +8,9 @@
     // scope of j is lines 14:22
     // scope of k is lines 17:19
 
+// Includes
+#include "chapter_4/bubble.h"
+
 void bubble(int a[], int n) {
     int i = 0;
     for (i = n; i >0; i --) {

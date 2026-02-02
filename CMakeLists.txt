@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(Inc)
 
+
 # Default:
 #add_executable(book_Farmer_1987 Src/main.c)
 
@@ -76,12 +77,31 @@ include_directories(Inc)
 # Example 4.7
 #add_executable(book_Farmer_1987 Src/chapter_4/perfect.c)
 
-# Example 4.8: Function definition only
+# Example 4.8: Function definition only, used in Example 4.9.
 
 # Example 4.9
 #add_executable(book_Farmer_1987 Src/chapter_4/uniq.c Inc/chapter_4/getline.h Src/chapter_4/getline.c)
 
 # Example 4.10
 # Uncomment the function call in main.c to test this.
-add_executable(book_Farmer_1987 Src/chapter_4/quadratic1.c Inc/chapter_4/quadratic.h Src/main.c)
+#add_executable(book_Farmer_1987 Src/chapter_4/quadratic1.c Inc/chapter_4/quadratic.h Src/main.c)
 
+# Example 4.11
+# Using bubble sort function also
+# Uncomment function call in main.c to test this program
+#add_executable( book_Farmer_1987
+#               Inc/chapter_4/
+#               Src/chapter_4/bubble.c
+#               Src/chapter_4/binary.c
+#               Src/main.c
+#            )
+
+# Assignment 4.2
+# Included some useful functions from chapter 3.
+add_executable( book_Farmer_1987
+                Inc/chapter_4/
+                Src/chapter_4/bubble.c
+                Src/chapter_4/binary.c
+                Src/chapter_4/salary.c
+                Src/chapter_4/assignment_4_2.c
+)
