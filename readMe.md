@@ -9,7 +9,7 @@
 **Source:** UNSW Library Book
 
 **Publisher:** 
-Department of Computer Science
+Department of Computer Science.
 Birkbeck College, University of London.
 
 # Notes
