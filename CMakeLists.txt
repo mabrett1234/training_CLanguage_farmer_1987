@@ -79,7 +79,9 @@ include_directories(Inc)
 # Example 4.8: Function definition only
 
 # Example 4.9
-add_executable(book_Farmer_1987 Src/chapter_4/uniq.c Inc/chapter_4/getline.h Src/chapter_4/getline.c)
+#add_executable(book_Farmer_1987 Src/chapter_4/uniq.c Inc/chapter_4/getline.h Src/chapter_4/getline.c)
 
 # Example 4.10
-#add_executable(book_Farmer_1987 Src/chapter_4/quadratic1.c)
+# Uncomment the function call in main.c to test this.
+add_executable(book_Farmer_1987 Src/chapter_4/quadratic1.c Inc/chapter_4/quadratic.h Src/main.c)
+
