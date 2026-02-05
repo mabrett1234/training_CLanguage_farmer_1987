@@ -13,7 +13,7 @@
 
 void bubble(int a[], int n) {
     int i = 0;
-    for (i = n; i >0; i --) {
+    for (i = n; i > 0; i --) {
         int j = 0;
         for (j = 0; j < i; j++) {
             if (a[j] > a[j+1]) {
