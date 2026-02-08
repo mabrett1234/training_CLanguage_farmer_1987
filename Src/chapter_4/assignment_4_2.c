@@ -18,6 +18,7 @@ int bubble_pattern(int * arr, int *pat, int n);
 
 int main(void) {
     printf("Assignment 4.2:\n");
+
     /* Test: Read in the salaries and print in order.
     // Read salaries into a nice array of ints
     int n = countEntries(); // Checks how many entries are in the file.
@@ -79,7 +80,6 @@ int main(void) {
     int tmp = 0;
     for (int i = n; i > 0; i--) {
         for (int j = 0; j < i; j++) {
-            // TODO: combine swap and k loop to save on variables
             int swap = 0;
             for (int k = 3; k > 0; k--) {
                 if (dob_arr[k][j] > dob_arr[k][j+1]) {
@@ -102,7 +102,6 @@ int main(void) {
 
     for (int i = n; i > 0; i--) {
         for (int j = 0; j < i; j++) {
-            // TODO: combine swap and k loop to save on variables
             int swap = 0;
             for (int k = 3; k > 0; k--) {
                 if (startDate_arr[k][j] > startDate_arr[k][j+1]) {
@@ -128,5 +127,3 @@ int main(void) {
             startDate_arr[0][0]);
     return 0;
 }
-
-// Main

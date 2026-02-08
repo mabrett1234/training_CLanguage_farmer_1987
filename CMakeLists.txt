@@ -98,10 +98,39 @@ include_directories(Inc)
 
 # Assignment 4.2
 # Included some useful functions from chapter 3.
-add_executable( book_Farmer_1987
-                Inc/chapter_4/
-                Src/chapter_4/bubble.c
-                Src/chapter_4/binary.c
-                Src/chapter_4/salary.c
-                Src/chapter_4/assignment_4_2.c
-)
+#add_executable( book_Farmer_1987
+#                Inc/chapter_4/
+#                Src/chapter_4/bubble.c
+#                Src/chapter_4/binary.c
+#                Src/chapter_4/salary.c
+#                Src/chapter_4/assignment_4_2.c
+#)
+
+# Assignment 4.3
+#add_executable( book_Farmer_1987 Src/chapter_4/assignment_4_3.c)
+
+# Chapter 5 ==================
+
+# Example 5.1
+#add_executable(book_Farmer_1987 Src/chapter_5/ctof2.c)
+
+# Example 5.2
+#add_executable(book_Farmer_1987
+#                Inc/chapter_4/getline.h
+#                Src/chapter_4/getline.c
+#                Src/chapter_5/reverse2.c
+#                Inc/chapter_6/reverse.h
+#                Src/chapter_6/reverse.c
+#)
+
+# Example 5.3
+#add_executable(book_Farmer_1987 Src/chapter_5/echo.c)
+
+# Example 5.4
+#add_executable(book_Farmer_1987 Src/chapter_5/unendliche.c)
+
+# Example 5.5
+#add_executable(book_Farmer_1987 Src/chapter_5/factorial.c)
+
+# Example 5.6
+add_executable(book_Farmer_1987 Src/chapter_5/hanoi.c)
